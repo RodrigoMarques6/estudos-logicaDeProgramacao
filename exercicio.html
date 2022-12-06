@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação com JS</title>
+</head>
+<body>
+    <script>
+        
+        // // Pedir para o usuário digitar um número
+        // const num1 = prompt('Digite um número')
+        // // Converter o número em inteiro
+        // // Pedir para o usuário digitar outro número
+        // const num2 = prompt('Digite outro número')
+        // // Converter o número em inteiro
+        // // Mostrar a subtração, concatenando com o texto "A subtração é"
+        // alert('A subtração é: ' + (parseInt(num1) - parseInt(num2)))
+
+        alert('Bem vindo!')
+        const num1 = prompt('Digite um número')
+        const operator = prompt('Digite o operador')
+        const num2 = prompt('Digite outro número')
+        if (operator === '+') {
+            alert("O resultado da soma é: " + (Number(num1) + Number(num2)))
+        } if (operator === '-') {
+            alert("O resultado da subtração é: " + (Number(num1) - Number(num2)))
+        } if (operator === '*') {
+            alert("O resultado da multiplicação é: " + (Number(num1) * Number(num2)))
+        } if (operator === '/') {
+            alert("O resultado da divisão é: " + (Number(num1) / Number(num2)))
+        }
+        alert('Obrigado!')
+    </script>
+</body>
+</html>
