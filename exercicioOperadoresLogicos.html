@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação com JS</title>
+</head>
+<body>
+    <script>
+        
+        const n1 = parseFloat(prompt('Digite sua nota1'));
+        const n2 = parseFloat(prompt('Digite sua nota2'));
+        const media = (n1 + n2) / 2;
+        // if (n1 === 0 && n2 === 0 && media <= 5) {
+        //     alert('Você foi reprovado')
+        // } else {
+        //     alert('Você foi aprovado!')
+        // }
+
+        if (n1 === 0 || n2 === 0 || media <= 5) {
+            alert('Infelizmente você foi reprovado.')
+        } else {
+            alert('Parabéns, você foi aprovado!')
+        }
+
+        // Continuar daqui: https://www.youtube.com/watch?v=WOH8GuP1JQM&list=PL1dUY2RYa2RidB3B134ywckDyf-FOwbv7&index=16&ab_channel=serfrontend
+        
+    </script>
+</body>
+</html>
