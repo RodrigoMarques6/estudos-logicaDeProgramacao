@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lógica de programação com JS</title>
 </head>
+
 <body>
     <script>
         // Reescreva a lógica deste problema de uma forma mais sucinta:
@@ -36,9 +38,21 @@
         //     }
         // }
 
-        // CONTINUAR DAQUI:
-        // https://www.youtube.com/watch?v=6ilVuQjInpY&list=PL1dUY2RYa2RidB3B134ywckDyf-FOwbv7&index=17
+        const n1 = prompt('Número do jogador1');
+        const n2 = prompt('Número do jogador2');
+
+        if (n1 === n2) {
+            alert('Empate!')
+        } else {
+            const sorteio = (parseInt(Math.random() * 2))
+            if (sorteio === 0 && n1 > n2) {
+                alert(`O jogador 1 venceu! O número sorteado foi ${sorteio}, o n1 foi ${n1} e o n2 foi ${n2}`)
+            } else if (sorteio === 1 && n1 < n2) {
+                alert(`O jogador 2 venceu! O número sorteado foi ${sorteio}`)
+            }
+        }
 
     </script>
 </body>
+
 </html>
